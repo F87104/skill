@@ -1,0 +1,19 @@
+# Project Prometheus - Dependencies
+# ==================================
+
+# X API
+tweepy>=4.14.0
+
+# LLM
+openai>=1.0.0
+
+# ニュース収集
+feedparser>=6.0.0
+beautifulsoup4>=4.12.0
+
+# ユーティリティ
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# データ処理
+pyyaml>=6.0
