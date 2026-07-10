@@ -22,7 +22,7 @@
 | :--- | :--- | :--- | :--- |
 | **投資家F (investor_f)** | 投資家F氏の独特な感性、鋭い洞察、SNSリズムを再現し、X投稿を生成するスキル。 | [SKILL.md](./skills/investor_f/SKILL.md) | [trend_oracle_v2.8.0.py](./skills/investor_f/trend_oracle_v2.8.0_pro_news_triple_choice.py) |
 | **投稿用Pythonエージェント (py_post_agent)** | ニュースの自動取得、事実要約、複数投稿案の生成プロセスを管理するエージェントスキル。 | [SKILL.md](./skills/py_post_agent/SKILL.md) | [trend_oracle_v2.8.0.py](./skills/py_post_agent/trend_oracle_v2.8.0_pro_news_triple_choice.py) |
-| **Substack自動ツール (substack_auto_tool)** | 人間らしい動作で凍結を防止する、Substackの自動いいね＆フォローツール。 | [SKILL.md](./skills/substack_auto_tool/SKILL.md) | [substack-auto-like-safe.zip](./skills/substack_auto_tool/substack-auto-like-safe.zip) |
+| **Substack自動ツール (substack_auto_tool)** | SeleniumでSubstackホームフィードを巡回し、人間らしい間隔で自動いいねするツール。 | [SKILL.md](./skills/substack_auto_tool/SKILL.md) | [substack_auto_like.py](./skills/substack_auto_tool/substack_auto_like.py) |
 | **pysonX自動ツール (pyson_x_auto_tool)** | Xの自動いいね、フォロー、投稿生成を統合した「Prometheus」システム。 | [SKILL.md](./skills/pyson_x_auto_tool/SKILL.md) | [prometheusフォルダ](./skills/pyson_x_auto_tool/) |
 
 ## 📂 ファイル構成ガイド
@@ -39,9 +39,9 @@ github_skills/
 │   ├── py_post_agent/    # 投稿用Pythonエージェントスキル
 │   │   ├── SKILL.md      # エージェントの動作プロセス・運用マニュアル
 │   │   └── trend_oracle_v2.8.0_pro_news_triple_choice.py # 投稿生成スクリプト
-│   ├── substack_auto_tool/ # Substack自動いいね＆フォローツール
-│   │   ├── SKILL.md      # ツールの安全機能と使い方の定義
-│   │   └── substack-auto-like-safe.zip # ソースコード一式
+│   ├── substack_auto_tool/ # Substack自動いいねツール（Selenium版）
+│   │   ├── SKILL.md      # ツールの使い方の定義
+│   │   └── substack_auto_like.py # 自動いいねスクリプト
 │   └── pyson_x_auto_tool/ # pysonX (Prometheus) 統合ツール
 │       ├── SKILL.md      # システム全体の運用マニュアル
 │       └── [各種Pythonスクリプト] # auto_like, trend_oracle等一式
